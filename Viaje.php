@@ -5,11 +5,11 @@ class Viaje{
     private $cantMaxPasajeros;
     private $coleccionPasajeros;
 
-    public function __construct($codigoViaje,$destinoViaje,$cantMaxPasajeros,$coleccionPasajeros){
+    public function __construct($codigoViaje,$destinoViaje,$cantMaxPasajeros){
         $this->codigoViaje=$codigoViaje;
         $this->destinoViaje=$destinoViaje;
         $this->cantMaxPasajeros=$cantMaxPasajeros;
-        $this->coleccionPasajeros=$coleccionPasajeros;
+        $this->coleccionPasajeros=[];
     }
     //permite obtener el valor del atributo que tiene en ese momento
     public function getCodigoViaje(){
