@@ -1,41 +1,42 @@
 <?php
 class Viaje{
-    private $codigo;
-    private $destino;
+    private $codigoViaje;
+    private $destinoViaje;
     private $cantMaxPasajeros;
-    private $pasajeros;
-    public function __construct($codigo,$destino,$cantMaxPasajeros,$pasajeros){
-        $this->codigo=$codigo;
-        $this->destino=$destino;
+    private $coleccionPasajeros;
+
+    public function __construct($codigoViaje,$destinoViaje,$cantMaxPasajeros,$coleccionPasajeros){
+        $this->codigoViaje=$codigoViaje;
+        $this->destinoViaje=$destinoViaje;
         $this->cantMaxPasajeros=$cantMaxPasajeros;
-        $this->pasajeros=$pasajeros;
+        $this->coleccionPasajeros=$coleccionPasajeros;
     }
     //permite obtener el valor del atributo que tiene en ese momento
-    public function getCodigo(){
-        return $this->codigo;
+    public function getCodigoViaje(){
+        return $this->codigoViaje;
     }
-    public function getDestino(){
-        return $this->destino;
+    public function getDestinoViaje(){
+        return $this->destinoViaje;
     }
     public function getCantMaxPasajeros(){
         return $this->cantMaxPasajeros;
     }
-    public function getPasajeros(){
-        return $this->pasajeros;
+    public function getColeccionPasajeros(){
+        return $this->coleccionPasajeros;
     }
 //permite dado un objeto cambiar el valor del atributo, 
 //recibe un valor por parámetro y lo asigna al objeto del atributo
-    public function setCodigo($codigo){
-        $this->codigo=$codigo;
+    public function setCodigoViaje($codigoViaje){
+        $this->codigoViaje=$codigoViaje;
     }
-    public function setDestino($destino){
-        $this->destino=$destino;
+    public function setDestinoViaje($destinoViaje){
+        $this->destinoViaje=$destinoViaje;
     }
     public function setCantMaxPasajeros($cantMaxPasajeros){
         $this->cantMaxPasajeros=$cantMaxPasajeros;
     }
-    public function setPasajeros($pasajeros){
-        $this->pasajeros=$pasajeros;
+    public function setColeccionPasajeros($coleccionPasajeros){
+        $this->coleccionPasajeros=$coleccionPasajeros;
     }
 
 }
